@@ -9,24 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="first version">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/footer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/img1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/img2.jpg" afterDir="false" />
+    <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="second version">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ConfirmationPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/AddJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/AddJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/DeleteJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/DeleteJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/UpdateJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/UpdateJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/UpdateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/UpdateUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/dao/JobDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/dao/JobDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/entity/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/entity/Job.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/add_job.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/add_job.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/component/all_css.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/component/all_css.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/edit_job.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit_job.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit_profile.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit_profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view_job.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view_job.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -246,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703167496738</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="second version">
+      <option name="closed" value="true" />
+      <created>1703186404501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703186404501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +251,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first version" />
-    <option name="LAST_COMMIT_MESSAGE" value="first version" />
+    <MESSAGE value="second version" />
+    <option name="LAST_COMMIT_MESSAGE" value="second version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

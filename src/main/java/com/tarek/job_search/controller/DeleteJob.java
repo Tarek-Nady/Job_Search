@@ -18,18 +18,13 @@ import static com.tarek.job_search.database.DbConnection.getConnection;
 public class DeleteJob extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        int id = req.getParameter("id") != null ? Integer.parseInt(req.getParameter("id")) : 0;
         try {
+            int id = Integer.parseInt(req.getParameter("id"));
+            System.out.println("hello  "+id);
             JobDao dao = new JobDao(DbConnection.getConnection());
             boolean effected =  dao.deleteJob(id);
             HttpSession session = req.getSession();
-            if(effected){
-                session.setAttribute("message", "Job deleted successfully");
-                resp.sendRedirect("view_job.jsp");
-            }else {
-                session.setAttribute("message", "Something went wrong");
-                resp.sendRedirect("view_job.jsp");
-            }
+            resp.sendRedirect("confirmationPage.jsp");
         } catch (SQLException e) {
             e.printStackTrace();
         }

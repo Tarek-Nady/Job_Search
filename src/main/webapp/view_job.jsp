@@ -87,10 +87,10 @@
                         <a href="edit_job.jsp?id=<%=j.getId()%>"
                            class="btn btn-sm bg-success text-white"><i
                                 class="fa-solid fa-pen-to-square"></i> Edit</a> <a
-<%--                            href="delete?id=<%=j.getId()%>"--%>
+<%--                            href="view_job.jsp?id=<%=j.getId()%>"--%>
 <%--                            class="btn btn-sm bg-danger text-white"><i--%>
 <%--                            class="fa-solid fa-trash"></i> Delete</a>--%>
-                        <form action="/Job_Search_war_exploded/delete" method="post">
+                        <form action="delete" method="post">
                             <input type="hidden" name="id" value="<%=j.getId()%>">
                             <button type="submit" class="btn btn-sm bg-danger text-white">
                                 <i class="fa-solid fa-trash"></i> Delete
