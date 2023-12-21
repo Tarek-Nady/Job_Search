@@ -20,10 +20,9 @@ public class DeleteJob extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
             int id = Integer.parseInt(req.getParameter("id"));
-            System.out.println("hello  "+id);
+//            System.out.println("hello  "+id);
             JobDao dao = new JobDao(DbConnection.getConnection());
-            boolean effected =  dao.deleteJob(id);
-            HttpSession session = req.getSession();
+            dao.deleteJob(id);
             resp.sendRedirect("confirmationPage.jsp");
         } catch (SQLException e) {
             e.printStackTrace();

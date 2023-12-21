@@ -9,12 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="second version">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/ConfirmationPage.jsp" afterDir="false" />
+    <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="third version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/DeleteJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/DeleteJob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/edit_job.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/edit_job.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/ConfirmationPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/confirmationPage.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view_job.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view_job.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +28,7 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="Jsp File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -60,41 +60,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Maven.Job_Search [clean,install,-U].executor": "Run",
-    "Maven.Job_Search [clean].executor": "Run",
-    "Maven.Job_Search [compile].executor": "Run",
-    "Maven.Job_Search [dependency:tree].executor": "Run",
-    "Maven.Job_Search [install].executor": "Run",
-    "Maven.Job_Search [validate].executor": "Run",
-    "Maven.Job_Search [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Tomcat Server.Tomcat 10.1.16.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Global Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Maven.Job_Search [clean,install,-U].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_Search [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_Search [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_Search [dependency:tree].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_Search [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_Search [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Job_Search [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.16.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Tarek\IdeaProjects\Job_Search\src\main\webapp\img" />
@@ -109,6 +109,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="Job_Search:war exploded">
           <settings>
@@ -217,6 +218,9 @@
       <workItem from="1703119540952" duration="1581000" />
       <workItem from="1703121152935" duration="315000" />
       <workItem from="1703165185648" duration="1301000" />
+      <workItem from="1703188538171" duration="62000" />
+      <workItem from="1703188623606" duration="78000" />
+      <workItem from="1703188714665" duration="4880000" />
     </task>
     <task id="LOCAL-00001" summary="first version">
       <option name="closed" value="true" />
@@ -242,7 +246,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703186404501</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="third version">
+      <option name="closed" value="true" />
+      <created>1703188421310</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703188421310</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +264,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first version" />
     <MESSAGE value="second version" />
-    <option name="LAST_COMMIT_MESSAGE" value="second version" />
+    <MESSAGE value="third version" />
+    <option name="LAST_COMMIT_MESSAGE" value="third version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
