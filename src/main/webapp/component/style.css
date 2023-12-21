@@ -1,0 +1,11 @@
+.navbar .nav-item ,nav-link{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar .nav-item .nav-link{
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+
