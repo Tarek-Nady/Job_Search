@@ -13,7 +13,7 @@
 
     <style type="text/css">
         .back-img {
-            background: url("img/Home_page.png");
+            background: url("img/footer.png");
             width: 100%;
             height: 100vh;
             background-repeat: no-repeat;
@@ -36,9 +36,9 @@
         </h1>
     </div>
 </div>
-<img class="footerImg" alt="hell" src="img/img1.png">
-<img class="footerImg" alt="hel" src="img/img2.png">
-<img class="footerImg" alt="he" src="img/footer.png">
+<%--<img class="footerImg" alt="hell" src="img/img1.jpg">--%>
+<%--//<img class="footerImg" alt="hel" src="img/img2.jpg">--%>
+<%--//<img class="footerImg" alt="he" src="img/footer.png">--%>
 <!-- Features -->
 
 <!-- <section class="white-section" id="features">
@@ -69,7 +69,7 @@
 
 
 
-<%-- <%@include file="all_component/footer.jsp"%> --%>
+ <%@include file="component/footer.jsp"%>
 </body>
 
 </html>

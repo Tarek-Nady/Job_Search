@@ -75,7 +75,7 @@
 
                     <div class="form-group mt-3">
                         <label>Enter Description</label>
-                        <textarea required rows="6" cols="" name="desc"
+                        <textarea required rows="6" cols="" name="description"
                                   class="form-control"></textarea>
                     </div>
 

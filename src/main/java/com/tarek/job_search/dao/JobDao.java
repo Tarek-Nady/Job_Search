@@ -24,7 +24,8 @@ public class JobDao {
             statement.setString(3, job.getCategory());
             statement.setString(4, job.getLocation());
             statement.setString(5, job.getStatus());
-            statement.setDate(6, new java.sql.Date(job.getPdate().getTime()));
+            statement.setDate(6, new java.sql.Date(job.getPdate()));
+
             int row_effected = statement.executeUpdate();
             if(row_effected > 0) {
                 return true;
@@ -82,7 +83,7 @@ public class JobDao {
             statement.setString(3, job.getCategory());
             statement.setString(4, job.getLocation());
             statement.setString(5, job.getStatus());
-            statement.setDate(6, new java.sql.Date(job.getPdate().getTime()));
+            statement.setDate(6, new java.sql.Date(job.getPdate()));
             statement.setInt(7, job.getId());
             int row_effected = statement.executeUpdate();
             if(row_effected==1){

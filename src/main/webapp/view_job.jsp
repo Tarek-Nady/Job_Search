@@ -5,6 +5,11 @@
 <%@page import="com.tarek.job_search.entity.Job"%>
 <%@page import="com.tarek.job_search.database.DbConnection"%>
 <%@page import="com.tarek.job_search.dao.JobDao"%>
+<%@ page import="java.util.logging.SimpleFormatter" %>
+<%@ page import="java.time.Instant" %>
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.time.ZoneId" %>
+<%@ page import="java.time.format.DateTimeFormatter" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
 <%@ page isELIgnored="false"%>
 
@@ -69,14 +74,28 @@
                     </div>
 
                     <h6 class="mt-3">
-                        Publish Date:<%=j.getPdate()%></h6>
+                        Publish Date:<%
+                        long d = j.getPdate();
+                        Instant instant = Instant.ofEpochMilli(d);
+                        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
+                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+                        String formattedDate = localDateTime.format(formatter);
+                        %>
+                        <%=formattedDate%>
+                    </h6>
                     <div class=" text-center mt-4">
                         <a href="edit_job.jsp?id=<%=j.getId()%>"
                            class="btn btn-sm bg-success text-white"><i
                                 class="fa-solid fa-pen-to-square"></i> Edit</a> <a
-                            href="delete?id=<%=j.getId()%>"
-                            class="btn btn-sm bg-danger text-white"><i
-                            class="fa-solid fa-trash"></i> Delete</a>
+<%--                            href="delete?id=<%=j.getId()%>"--%>
+<%--                            class="btn btn-sm bg-danger text-white"><i--%>
+<%--                            class="fa-solid fa-trash"></i> Delete</a>--%>
+                        <form action="/Job_Search_war_exploded/delete" method="post">
+                            <input type="hidden" name="id" value="<%=j.getId()%>">
+                            <button type="submit" class="btn btn-sm bg-danger text-white">
+                                <i class="fa-solid fa-trash"></i> Delete
+                            </button>
+                        </form>
                     </div>
                 </div>
 

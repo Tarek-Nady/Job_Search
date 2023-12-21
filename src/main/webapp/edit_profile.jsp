@@ -33,7 +33,7 @@
                         <h5>Edit Profile</h5>
                     </div>
 
-                    <form action="update_profile" method="post">
+                    <form action="edit_profile" method="post">
                         <input type="hidden" name="id" value="${user.id }">
                         <div class="form-group mb-3 mt-2">
                             <label>Enter Full Name</label> <input type="text" placeholder="Name"
@@ -45,20 +45,20 @@
                         <div class="form-group mb-3">
                             <label>Qualification</label> <input required="required" placeholder="Qualification"
                                                                 type="text" class="form-control" id="exampleInputEmail12"
-                                                                aria-describedby="emailHelp" name="qualification" value="${userobj.password }">
+                                                                aria-describedby="emailHelp" name="qualification" value="${user.qualification }">
                         </div>
 
                         <div class="form-group mb-3">
                             <label>Email</label> <input type="text" placeholder="Email"
                                                         required="required" class="form-control"
                                                         id="exampleInputEmail1" aria-describedby="emailHelp"
-                                                        name="qualification" value="${user.qualification}">
+                                                        name="email" value="${user.email}">
                         </div>
 
                         <div class="form-group mb-3">
                             <label for="exampleInputPassword1">New Password</label> <input
                                 required="required" placeholder="Password" type="password" class="form-control"
-                                id="exampleInputPassword1" name="passsword" value="${user.password }">
+                                id="exampleInputPassword1" name="password" value="${user.password }">
                         </div>
 
                         <button type="submit"

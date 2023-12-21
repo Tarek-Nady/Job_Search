@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.Date;
 
 @WebServlet("/edit_job")
 public class UpdateJob extends HttpServlet {
@@ -23,9 +24,8 @@ public class UpdateJob extends HttpServlet {
             String description = req.getParameter("description");
             String location = req.getParameter("location");
             String category = req.getParameter("category");
-            String jobSalary = req.getParameter("jobSalary");
+            String  pdata = req.getParameter("pdate");
             String status = req.getParameter("status");
-
             JobDao dao = new JobDao(DbConnection.getConnection());
             Job job = new Job();
             job.setId(id);

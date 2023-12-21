@@ -5,6 +5,10 @@
 <%@page import="com.tarek.job_search.entity.Job"%>
 <%@page import="com.tarek.job_search.database.DbConnection"%>
 <%@page import="com.tarek.job_search.dao.JobDao"%>
+<%@ page import="java.time.format.DateTimeFormatter" %>
+<%@ page import="java.time.ZoneId" %>
+<%@ page import="java.time.LocalDateTime" %>
+<%@ page import="java.time.Instant" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core"%>
 <%@ page isELIgnored="false"%>
 
@@ -126,7 +130,12 @@
                     </div>
 
                     <h6 class="mt-3">
-                        Publish Date:<%=j.getPdate().toString()%></h6>
+                        Publish Date:<%long d = j.getPdate();
+                        Instant instant = Instant.ofEpochMilli(d);
+                        LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
+                        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+                        String formattedDate = localDateTime.format(formatter);
+                    %><%=formattedDate%></h6>
                     <div class=" text-center mt-4">
                         <a href="one_view.jsp?id=<%=j.getId()%>"
                            class="btn btn-outline-secondary  btn-block btn-sm">View More</a>

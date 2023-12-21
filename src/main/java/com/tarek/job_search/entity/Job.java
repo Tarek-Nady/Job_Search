@@ -1,6 +1,6 @@
 package com.tarek.job_search.entity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Job {
     private int id;
@@ -9,7 +9,7 @@ public class Job {
     private String category;
     private String location;
     private String status;
-    private Date pdate;
+    private Date pdate = new Date(System.currentTimeMillis());
 
     public Job() {
     }
@@ -72,8 +72,8 @@ public class Job {
         this.status = status;
     }
 
-    public Date getPdate() {
-        return pdate;
+    public long getPdate() {
+        return pdate.getTime();
     }
 
     public void setPdate(Date pdate) {

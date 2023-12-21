@@ -14,7 +14,7 @@ import java.sql.SQLException;
 
 import static com.tarek.job_search.database.DbConnection.getConnection;
 
-@WebServlet("/deleteJob")
+@WebServlet("/delete")
 public class DeleteJob extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

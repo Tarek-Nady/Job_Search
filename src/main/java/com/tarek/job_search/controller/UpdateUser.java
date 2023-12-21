@@ -23,7 +23,8 @@ public class UpdateUser extends HttpServlet {
             String qualification = req.getParameter("qualification");
             String email = req.getParameter("email");
             String password = req.getParameter("password");
-
+            System.out.println("password "+password);
+            //String role = req.getParameter("role");
             UserDao dao = new UserDao(DbConnection.getConnection());
             User user = new User();
             user.setId(id);
@@ -31,6 +32,7 @@ public class UpdateUser extends HttpServlet {
             user.setQualification(qualification);
             user.setEmail(email);
             user.setPassword(password);
+            user.setrole("user");
             HttpSession session = req.getSession();
             boolean effected = dao.updateUser(user);
             if(effected){
