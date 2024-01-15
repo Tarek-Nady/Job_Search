@@ -13,8 +13,22 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * Servlet implementation for handling user profile updates.
+ * Mapped to "/edit_profile" URL pattern.
+ */
 @WebServlet("/edit_profile")
 public class UpdateUser extends HttpServlet {
+
+     /**
+     * Handles the HTTP POST request for updating a user's profile.
+     * Receives user profile details from the request, updates the user information, and saves the changes to the database.
+     * 
+     * @param req  HttpServletRequest object that contains the request the client has made of the servlet
+     * @param resp HttpServletResponse object that contains the response the servlet sends to the client
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException      if an I/O error occurs
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
