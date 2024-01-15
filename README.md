@@ -15,5 +15,79 @@
 4-Start the Apache Tomcat server.
 5-Access the application via http://localhost:[port] you put in application.properties
 
+## Technologies
+[![Language](https://img.shields.io/badge/Language-Java-orange)](https://www.java.com/)
+[![Framework](https://img.shields.io/badge/Framework-Spring%20Boot-brightgreen)](https://spring.io/projects/spring-boot)
+[![Database](https://img.shields.io/badge/Database-MySQL-blueviolet)](https://www.mysql.com/)
+
+
 ** Features **
-you have login page and logout page
+you can login page and logout page
+<figure>
+    <br>
+    <img src="images/login.png" alt="login" style="width:100%;">
+</figure>
+
+you can register for new account
+<figure>
+    <br>
+    <img src="images/register.png" alt="login" style="width:100%;">
+</figure>
+
+you have profile page for you
+<figure>
+    <br>
+    <img src="images/profile.png" alt="login" style="width:100%;">
+</figure>
+
+you can update your profile
+<figure>
+    <br>
+    <img src="images/update_profile.png" alt="login" style="width:100%;">
+</figure>
+
+you can publish jobs
+<figure>
+    <br>
+    <img src="images/publish_job.png" alt="login" style="width:100%;">
+</figure>
+
+you can publish jobs successfully
+<figure>
+    <br>
+    <img src="images/publish_success.png" alt="login" style="width:100%;">
+</figure>
+
+you can edit jobs
+<figure>
+    <br>
+    <img src="images/edit_jobs.png" alt="login" style="width:100%;">
+</figure>
+
+you can view jobs
+<figure>
+    <br>
+    <img src="images/view_jobs.png" alt="login" style="width:100%;">
+</figure>
+
+you can view more jobs
+<figure>
+    <br>
+    <img src="images/view_more.png" alt="login" style="width:100%;">
+</figure>
+
+you can delete jobs 
+<figure>
+    <br>
+    <img src="images/view_jobs.png" alt="login" style="width:100%;">
+</figure>
+
+## FAQ
+- Feel free to ask me any questions
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+
