@@ -8,14 +8,32 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.*;
 
+
+
+/**
+ * Data Access Object (DAO) class for handling operations related to the 'Job' entity.
+ * Provides methods to perform database operations like insert, update, delete, and query jobs.
+ */
 public class JobDao {
     private Connection connection;
     private PreparedStatement ps;
 
+
+     /**
+     * Constructor to initialize JobDao with a database connection.
+     * @param connection The database connection to be used for data operations.
+     */
     public JobDao(Connection connection) {
         this.connection = connection;
     }
 
+
+     /**
+     * Adds a new job to the database.
+     * @param job The job object to be added.
+     * @return true if the job is added successfully, false otherwise.
+     * @throws SQLException if a database access error occurs.
+     */
     public boolean addJob(Job job) throws SQLException {
         String sql = "INSERT INTO jobs (title, description, category, location, status, pdate) VALUES (?, ?, ?, ?, ?, ?)";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -34,6 +52,12 @@ public class JobDao {
         return false;
     }
 
+     /**
+     * Retrieves a job from the database by its ID.
+     * @param id The ID of the job to retrieve.
+     * @return the Job object if found, null otherwise.
+     * @throws SQLException if a database access error occurs.
+     */
     public Job getJobById(int id) throws SQLException {
         String sql = "SELECT * FROM jobs WHERE id = ?";
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -55,6 +79,11 @@ public class JobDao {
         return null;
     }
 
+    /**
+     * Retrieves all jobs from the database.
+     * @return a list of all jobs.
+     * @throws SQLException if a database access error occurs.
+     */
     public List<Job> getAllJobs() throws SQLException {
         List<Job> jobs = new ArrayList<>();
         String sql = "SELECT * FROM jobs";
