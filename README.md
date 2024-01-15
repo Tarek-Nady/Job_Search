@@ -4,8 +4,8 @@
 - The frontend is designed with HTML and enhanced with Bootstrap, making the user interface responsive and visually appealing. CSS is used for further styling, allowing for a more customized and engaging user experience.
 
 ** Prerequisites **
-- install Java Development Kit (JDK) version [at least 8]
-- install Apache Tomcat Server [use verion 10.1]
+- install Java Development Kit (JDK) version [at least version 8]
+- install Apache Tomcat Server [use version 10.1]
 - install mysql database[use version 8]
 - install maven build tool
 
