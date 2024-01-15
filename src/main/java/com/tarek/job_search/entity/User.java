@@ -1,5 +1,9 @@
 package com.tarek.job_search.entity;
 
+/**
+ * Entity class representing a User.
+ * Contains user-related information and methods to access and modify it.
+ */
 public class User {
     private int id;
     private String name;
@@ -11,6 +15,15 @@ public class User {
     public User() {
     }
 
+      /**
+     * Parameterized constructor to create a user object with specified details.
+     * @param id The user's ID.
+     * @param name The user's name.
+     * @param email The user's email address.
+     * @param password The user's password.
+     * @param qualification The user's qualification.
+     * @param role The user's role.
+     */
     public User(int id, String name, String email, String password, String qualification, String role) {
         this.id = id;
         this.name = name;
