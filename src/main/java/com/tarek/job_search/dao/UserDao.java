@@ -7,12 +7,28 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
+/**
+ * Data Access Object (DAO) class for handling operations related to the 'User' entity.
+ * Provides methods to perform database operations like insert, update, and query users.
+ */
 public class UserDao {
     private Connection connection;
 
+     /**
+     * Constructor to initialize UserDao with a database connection.
+     * @param connection The database connection to be used for data operations.
+     */
     public UserDao(Connection connection) {
         this.connection = connection;
     }
+
+     /**
+     * Adds a new user to the database.
+     * @param user The user object to be added.
+     * @return true if the user is added successfully, false otherwise.
+     * @throws SQLException if a database access error occurs.
+     */
     public boolean addUser(User user) throws SQLException {
         String sql = "INSERT INTO users (name, email, password, qualification, role) VALUES (?, ?, ?, ?, ?)";
         try (PreparedStatement pr = connection.prepareStatement(sql)){
@@ -27,6 +43,13 @@ public class UserDao {
         return false;
     }
 
+     /**
+     * Authenticates a user based on email and password.
+     * @param email The email of the user.
+     * @param password The password of the user.
+     * @return The User object if authentication is successful, null otherwise.
+     * @throws SQLException if a database access error occurs.
+     */
     public User login(String email,String password) throws SQLException {
         String sql = "SELECT * FROM users WHERE email = ? AND password = ?";
         try (PreparedStatement pr = connection.prepareStatement(sql)){
@@ -49,6 +72,12 @@ public class UserDao {
         return null;
     }
 
+    /**
+     * Updates an existing user in the database.
+     * @param user The user object with updated details.
+     * @return true if the update is successful, false otherwise.
+     * @throws SQLException if a database access error occurs.
+     */
     public boolean updateUser(User user) throws SQLException {
         String sql = "UPDATE users SET name = ?, email = ?, password = ?, qualification = ?, role = ? WHERE id = ?";
         try (PreparedStatement pr = connection.prepareStatement(sql)){
