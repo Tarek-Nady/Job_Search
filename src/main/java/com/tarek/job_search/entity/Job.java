@@ -2,6 +2,10 @@ package com.tarek.job_search.entity;
 
 import java.sql.Date;
 
+/**
+ * Entity class representing a Job.
+ * Contains job-related information and methods to access and modify it.
+ */
 public class Job {
     private int id;
     private String title;
@@ -13,6 +17,17 @@ public class Job {
 
     public Job() {
     }
+
+     /**
+     * Parameterized constructor to create a job object with specified details.
+     * @param id The job's ID.
+     * @param title The job's title.
+     * @param description The job's description.
+     * @param category The job's category.
+     * @param location The job's location.
+     * @param status The job's status.
+     * @param pdate The job's posting date.
+     */
 
     public Job(int id, String title, String description, String category, String location, String status, Date pdate) {
         this.id = id;
