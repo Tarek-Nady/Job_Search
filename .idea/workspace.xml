@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="third version">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48424061-75e3-4696-afcf-18c7b8231709.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48424061-75e3-4696-afcf-18c7b8231709.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="third version" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,6 +220,7 @@
       <workItem from="1703188623606" duration="78000" />
       <workItem from="1703188714665" duration="4880000" />
       <workItem from="1705356192410" duration="370000" />
+      <workItem from="1705356660704" duration="382000" />
     </task>
     <task id="LOCAL-00001" summary="first version">
       <option name="closed" value="true" />
@@ -257,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703188421310</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="third version">
+      <option name="closed" value="true" />
+      <created>1705356907413</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705356907413</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
