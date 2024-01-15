@@ -10,11 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75fe7ddf-c5c3-43f8-8e53-d09e57bf10e8" name="Changes" comment="third version">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/48424061-75e3-4696-afcf-18c7b8231709.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/48424061-75e3-4696-afcf-18c7b8231709.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/DeleteJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/DeleteJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tarek/job_search/controller/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/ConfirmationPage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/confirmationPage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view_job.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view_job.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -110,6 +111,7 @@
   <component name="RunManager">
     <configuration name="Tomcat 10.1.16" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="Job_Search:war exploded">
           <settings>
@@ -221,6 +223,7 @@
       <workItem from="1703188538171" duration="62000" />
       <workItem from="1703188623606" duration="78000" />
       <workItem from="1703188714665" duration="4880000" />
+      <workItem from="1705356192410" duration="370000" />
     </task>
     <task id="LOCAL-00001" summary="first version">
       <option name="closed" value="true" />
