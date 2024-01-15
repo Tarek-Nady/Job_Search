@@ -12,9 +12,21 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.Date;
 import java.sql.SQLException;
-
+/**
+ * Servlet implementation for adding a new job.
+ * Mapped to "/add_job" URL pattern.
+ */
 @WebServlet("/add_job")
 public class AddJob extends HttpServlet {
+     /**
+     * Handles the HTTP POST request.
+     * Receives job details from the request, creates a new job, and attempts to save it to the database.
+     * 
+     * @param req  HttpServletRequest object that contains the request the client has made of the servlet
+     * @param resp HttpServletResponse object that contains the response the servlet sends to the client
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException      if an I/O error occurs
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
