@@ -13,8 +13,22 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
+/**
+ * Servlet implementation for handling new user registration.
+ * Mapped to "/add_user" URL pattern.
+ */
 @WebServlet("/add_user")
     public class Register extends HttpServlet {
+
+    /**
+     * Handles the HTTP POST request for user registration.
+     * Receives user details from the request, creates a new user, and attempts to add it to the database.
+     * 
+     * @param req  HttpServletRequest object that contains the request the client has made of the servlet
+     * @param resp HttpServletResponse object that contains the response the servlet sends to the client
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException      if an I/O error occurs
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
